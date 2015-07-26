@@ -1,8 +1,4 @@
-
 $(function() {
-
-smoothScroll.init();
-
 //paralax
 function parallaxIt() {
 
@@ -36,6 +32,33 @@ function parallaxIt() {
 };
 
 parallaxIt();
+
+//popup-form
+
+	function popupFormOpen() {
+		$('.popup-form').fadeIn(300)
+		$('.popup-form__form').animate({
+			'top': '50%'
+		}, 150)
+		$('body').css('overflow', 'hidden');
+	}
+	function popupFormClose() {
+		$('.popup-form').fadeOut(300)
+		$('.popup-form__form').animate({
+			'top': '20%'
+		}, 150)
+		$('body').css('overflow', 'visible');
+	}
+	$('.js-popup-form').on('click', function(e) {
+		e.preventDefault();
+		popupFormOpen();
+		$('body').on('click', function(e) {
+			if($(e.target).hasClass('popup-form') || $(e.target).hasClass('popup-form-close')) {
+				popupFormClose()
+			}
+
+		})
+	});
 
 });
 
