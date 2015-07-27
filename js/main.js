@@ -59,6 +59,19 @@ parallaxIt();
 
 		})
 	});
+	$('.js-popup-form__send').on('click', function(e) {
+		////ajax and validation
+		
+		//success
+		
+		$('.popup-form__show-form').fadeOut(300, function() {
+			$('.popup-form__success').fadeIn(300);
+		})
+
+		
+	})
+
+
 
 });
 

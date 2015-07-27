@@ -5,9 +5,21 @@
   font-weight: normal;
   font-style: normal; }
 @font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/roboto/roboto-light.eot");
+  src: url("../fonts/roboto/roboto-light.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-light.woff2") format("woff2"), url("../fonts/roboto/roboto-light.woff") format("woff"), url("../fonts/roboto/roboto-light.ttf") format("truetype"), url("../fonts/roboto/roboto-light.svg#robotolight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
   font-family: 'pf_agora_serif_promedium';
   src: url("../fonts/pfagoraserifpro/pfagoraserifpro-medium.eot");
   src: url("../fonts/pfagoraserifpro/pfagoraserifpro-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/pfagoraserifpro/pfagoraserifpro-medium.woff2") format("woff2"), url("../fonts/pfagoraserifpro/pfagoraserifpro-medium.woff") format("woff"), url("../fonts/pfagoraserifpro/pfagoraserifpro-medium.ttf") format("truetype"), url("../fonts/pfagoraserifpro/pfagoraserifpro-medium.svg#pf_agora_serif_promedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'pf_agora_serif_probold';
+  src: url("../fonts/pfagoraserifpro/pfagoraserifpro-bold.eot");
+  src: url("../fonts/pfagoraserifpro/pfagoraserifpro-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/pfagoraserifpro/pfagoraserifpro-bold.woff2") format("woff2"), url("../fonts/pfagoraserifpro/pfagoraserifpro-bold.woff") format("woff"), url("../fonts/pfagoraserifpro/pfagoraserifpro-bold.ttf") format("truetype"), url("../fonts/pfagoraserifpro/pfagoraserifpro-bold.svg#pf_agora_serif_probold") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
@@ -166,6 +178,56 @@
   background: #c9dfe4;
   height: 254px; }
 
+.footer {
+  background: #333333;
+  height: 157px; }
+  .footer .footer__grid {
+    width: 33.33333%;
+    height: 100px;
+    float: left; }
+  .footer .footer__coptright {
+    font-family: 'robotolight';
+    color: #fff;
+    padding-top: 35px; }
+  .footer .footer__coptright-year, .footer .footer__coptright-description {
+    margin-left: 98px;
+    font-size: 12px;
+    letter-spacing: .05em;
+    margin-bottom: 20px; }
+  .footer .footer__contacts {
+    padding-top: 26px; }
+  .footer .footer__phone-number {
+    font-family: 'robotolight';
+    color: #fff;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-left: 168px;
+    line-height: 26px; }
+  .footer .footer__callback {
+    font-family: 'museo_sans_cyrl500';
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
+    margin-left: 170px; }
+    .footer .footer__callback:hover {
+      border-bottom: none; }
+  .footer .footer__webprofy-element {
+    vertical-align: top;
+    padding-top: 38px;
+    line-height: 34px;
+    color: #fff;
+    font-size: 12px;
+    margin-left: 196px; }
+  .footer .footer__webprofy-link {
+    font-family: 'Roboto';
+    font-size: 12px;
+    color: #fff;
+    vertical-align: top;
+    line-height: 34px; }
+    .footer .footer__webprofy-link:hover {
+      text-decoration: none; }
+
 .popup-form {
   width: 100%;
   height: 100%;
@@ -175,13 +237,74 @@
   z-index: 999999;
   display: none; }
   .popup-form .popup-form__form {
-    width: 200px;
-    height: 200px;
-    margin-left: -100px;
-    margin-top: -100px;
+    width: 420px;
+    height: 334px;
+    margin-left: -210px;
+    margin-top: -167px;
     position: absolute;
     left: 50%;
     top: 20%;
-    background: #c2d7dc; }
+    background: #c2d7dc;
+    padding-top: 42px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px; }
+  .popup-form .popup-form__close {
+    background: url("../img/popup-form-close.png") no-repeat;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    right: 12px;
+    top: 12px; }
+    .popup-form .popup-form__close:hover {
+      cursor: pointer; }
+  .popup-form .popup-form__title {
+    font-family: 'pf_agora_serif_promedium';
+    font-size: 34px;
+    color: #438594;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px; }
+  .popup-form .popup-form__input {
+    font-family: 'robotolight';
+    color: #888;
+    font-size: 18px;
+    display: block;
+    width: 314px;
+    height: 46px;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+    margin-bottom: 28px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px; }
+  .popup-form .popup-form__send-button {
+    background: #0095cf;
+    font-family: 'pf_agora_serif_probold';
+    font-size: 22px;
+    display: block;
+    width: 314px;
+    height: 48px;
+    margin: 40px auto 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: middle;
+    line-height: 48px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px; }
+  .popup-form .popup-form__success {
+    display: none;
+    text-align: center;
+    font-family: 'robotolight';
+    font-size: 22px;
+    color: #303030;
+    padding-top: 18px; }
 
 /*# sourceMappingURL=main.css.map */

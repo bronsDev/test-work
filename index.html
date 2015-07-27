@@ -63,15 +63,39 @@
             </div>
         </article>
         <footer class="footer">
-            <div class="footer__element fix-width">
-                
+            <div class="footer__element fix-width cf">
+                <div class="footer__coptright footer__grid">
+                    <p class="footer__coptright-year">© 2015</p>
+                    <p class="footer__coptright-description">Копирование материала разрешено только со<br> ссылкой на этот сайт</p>
+                </div>
+                <div class="footer__contacts footer__grid">
+                    <p class="footer__phone-number">
+                        <span class="footer__phone-number_lower">(+375 29)</span> 270-21-29<br>
+                        <span class="footer__phone-number_lower">(+375 29)</span> 937-55-35
+                    </p>
+                    <a href="#" class="footer__callback js-popup-form-open">Заказать обратный звонок</a>
+                </div>
+                <div class="footer__webprofy footer__grid">
+                    <div class="footer__webprofy-element">
+                        <a class="footer__webprofy-link" href="#"><img src="img/webprofy.png" alt=""></a> — <a class="footer__webprofy-link" href="#">разработка сайта</a>
+                    </div>
+                </div>
             </div>
         </footer>
         
         <div class="popup-form js-popup-form">
-            <div class="popup-form__form js-popup-form__form">
-                
-            </div>
+            <form class="popup-form__form js-popup-form__form">
+                <div class="popup-form__close js-popup-form-close"></div>
+                <div class="popup-form__title">Обратный звонок</div>
+                    <div class="popup-form__show-form">
+                        <input class="popup-form__input" type="text" name="name" placeholder="ваше имя">
+                        <input class="popup-form__input" type="text" name="phone" placeholder="телефон">
+                        <a href="#" class="popup-form__send-button js-popup-form__send">Отправить</a>
+                    </div>
+                    <div class="popup-form__success">
+                        <p class="popup-form__success-description">Спасибо! Ваша заявка принята, в ближайшее время наши менежеры свяжутся с вами.</p>
+                    </div>
+            </form>
         </div>
         <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
