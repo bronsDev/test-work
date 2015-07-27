@@ -20,7 +20,7 @@ function parallaxIt() {
     var speed = ($backgroundObj.data('speed') || 0 );
 
     $fwindow.on('scroll resize', function() {
-      yPos = - ((scrollTop - bgOffset) / speed); 
+      yPos = - ((scrollTop - bgOffset) / speed) - $backgroundObj.data('pos'); 
       coords = '50% '+ yPos + 'px';
 
       $backgroundObj.css({ backgroundPosition: coords });
