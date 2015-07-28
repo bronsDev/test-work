@@ -60,6 +60,7 @@ parallaxIt();
 		})
 	});
 	$('.js-popup-form__send').on('click', function(e) {
+		e.preventDefault();
 		////ajax and validation
 		
 		//success
@@ -73,6 +74,40 @@ parallaxIt();
 
 
 
+
+
+
+//slider init
+
+$('.examples__slider').bxSlider({
+	pager: false,
 });
 
+// yaMap
 
+    ymaps.ready(init);
+
+        var myMap, 
+            myPlacemark;
+
+        function init(){ 
+            myMap = new ymaps.Map("map", {
+                center: [53.936386, 27.433336],
+                zoom: 15
+            }); 
+            
+            myPlacemark = new ymaps.Placemark([53.936386, 27.433336], {
+                balloonContent: 'Ул. Вязынская, д.8 Минск, Беларусь'
+            }, {
+            	iconLayout: 'default#image',
+		        iconImageHref: 'http://serovw.bget.ru/img/baloon.png',
+		        iconImageSize: [50, 50],
+		        iconImageOffset: [-3, -42]
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+    }
+
+
+
+});
