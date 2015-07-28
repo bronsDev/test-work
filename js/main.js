@@ -102,6 +102,7 @@ $('.examples__slider').bxSlider({
             	iconLayout: 'default#image',
 		        iconImageHref: 'http://serovw.bget.ru/img/baloon.png',
 		        iconImageSize: [50, 50],
+		        iconOffset: [-20, -10],
 		        iconImageOffset: [-3, -42]
             });
             

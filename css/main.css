@@ -422,7 +422,8 @@
     margin-top: 38px; }
   .webprofy-stat .webprofy-stat__blocks {
     text-align: center;
-    padding-left: 98px; }
+    padding-left: 98px;
+    margin-bottom: 86px; }
   .webprofy-stat .webprofy-stat__block {
     width: 31%;
     display: inline-block;
@@ -443,6 +444,26 @@
     margin-top: 10px;
     margin-left: 50px;
     line-height: 30px; }
+  .webprofy-stat .webprofy-stat__clients-left-block {
+    width: 42%;
+    float: left;
+    margin-right: 26px; }
+  .webprofy-stat .webprofy-stat__clients-right-block {
+    width: 45%;
+    float: left; }
+  .webprofy-stat .webprofy-stat__client-img {
+    float: left; }
+  .webprofy-stat .webprofy-stat__clients {
+    padding-left: 156px; }
+  .webprofy-stat .webprofy-stat__client {
+    margin-bottom: 22px; }
+  .webprofy-stat .webprofy-stat__client-description {
+    padding-left: 98px;
+    font-family: 'robotolight';
+    font-size: 16px;
+    color: #fff;
+    margin-top: 0px;
+    line-height: 1.5; }
   .webprofy-stat .webprofy-stat__bottom-line {
     overflow: hidden;
     position: absolute;
